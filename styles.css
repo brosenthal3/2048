@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin:0;
+    background:#eeebe7;
+}
+h1{
+    margin:0;
+    font-size:2.5em;
+}
+button{
+    border:1px solid rgba(0, 0, 0, 0.1);
+    padding:.5em .8em;
+    font:inherit;
+    font-size:16px;
+    font-weight: normal;
+    cursor:pointer;
+    background-color: #CDC0B4;
+    color:#776E65;
+    border-radius:7px;
+}
+
+.container{
+    margin:auto;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    padding:1.2em;
+}
+.gameContainer, .header{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.grid{
+    width:500px;
+    height:500px;
+    background:#CDC0B4;
+    display:flex;
+    flex-wrap:wrap;
+    border:4px solid #BBADA0;
+    margin-top:1em;
+}
+
+.grid div{
+    color:#776E65;
+    width:25%;
+    height:25%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:45px;
+    font-weight: bold;
+    border:4px solid #BBADA0;
+}
+
+.header{
+    background:#EEE4DA;
+    color:#776E65;
+    padding:1em;
+    border-bottom:4px solid #BBADA0;
+}
+.header h1{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.header button{
+    margin-left:1em;
+}
+.header p{
+    margin:.4em;
+}
+.result{
+    font-size:2.5em;
+    position:absolute;
+    top:30%;
+    font-weight: bold;
+    text-shadow:1px 1px 20px 5px black;
+    color:#776E65;
+    text-align:center;
+}
+.result span{
+    font-size:20px;
+}
+
+.footer{
+    font-size:14px;
+    width:100%;
+    position: fixed;
+    bottom:0;
+    text-align:center;
+    background:#EEE4DA;
+    color:#776E65;
+    padding:.6em;
+    border-top:4px solid #BBADA0;
+}
+
+/*.grid div:nth-child(even){
+    border:7px solid #BBADA0;
+    border-width:7px 7px 7px 7px;
+}
+.grid div:nth-child(odd){
+    border:7px solid #BBADA0;
+    border-width:7px 7px 7px 7px;
+}*/
